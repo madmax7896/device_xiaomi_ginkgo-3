@@ -87,6 +87,31 @@ PRODUCT_PACKAGES += \
     fstab.qcom \
     init.target.rc
 
+# RCS
+PRODUCT_PACKAGES += \
+    rcs_service_aidl \
+    rcs_service_aidl.xml \
+    rcs_service_api \
+    rcs_service_api.xml
+
+# RenderScript HAL
+PRODUCT_PACKAGES += \
+    android.hardware.renderscript@1.0-impl
+
+# Recovery
+PRODUCT_PACKAGES += \
+    librecovery_updater_xiaomi
+
+# RIL
+PRODUCT_PACKAGES += \
+    android.hardware.radio@1.4 \
+    android.hardware.radio.config@1.1 \
+    android.hardware.secure_element@1.0 \
+    libjson \
+    librmnetctl \
+    libxml2 \
+    libprotobuf-cpp-full
+
 # Sensors
 PRODUCT_PACKAGES += \
     android.hardware.sensors@1.0-impl \
