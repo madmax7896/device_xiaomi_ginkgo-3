@@ -56,14 +56,11 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/nxp/opensource/sn100x
 
 PRODUCT_PACKAGES += \
-    com.android.nfc_extras \
-    com.nxp.nfc.nq \
-    NQNfcNci \
+    android.hardware.nfc@1.2-service \
+    android.hardware.secure_element@1.0-service \
+    NfcNci \
     Tag \
-    vendor.nxp.hardware.nfc@1.2-service \
-
-PRODUCT_BOOT_JARS += \
-    com.nxp.nfc.nq
+    SecureElement
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
